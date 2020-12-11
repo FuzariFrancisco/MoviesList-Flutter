@@ -2,12 +2,14 @@
 
 Aplicativo de lista de filmes utilizando a API do [TMDb](https://www.themoviedb.org/?language=pt-BR) criado para disciplina de Programação Mobile, criado por Kleber de Oliveira Andrade
 
+Resolvido por: Francisco Fuzari
+
 Tutorial de criação deste app: [clique aqui](https://kleberandrade.medium.com/criando-um-aplicativo-em-flutter-para-consumir-uma-api-de-filmes-tmdb-2b5a9982bfcd)
 
 <p align="center">
-    <img src="https://miro.medium.com/max/334/1*QWNFydDZqp2Y12UDsRROHQ.png" width="250"/>
-    <img src="https://miro.medium.com/max/334/1*zk7ckxu63R3zKAGdUdUAbg.png" width="250"/>
-    <img src="https://miro.medium.com/max/334/1*SpoH2wRV3jNAuCk1Hz4EzQ.png" width="250"/>
+    <img src="https://github.com/FuzariFrancisco/MoviesList-Flutter/blob/master/1%20(2).jpeg" width="250"/>
+    <img src="https://github.com/FuzariFrancisco/MoviesList-Flutter/blob/master/2%20(2).jpeg" width="250"/>
+    <img src="https://github.com/FuzariFrancisco/MoviesList-Flutter/blob/master/3%20(2).jpeg" width="250"/>
 </p>
 
 ## Como clonar o projeto
@@ -20,11 +22,11 @@ Tutorial de criação deste app: [clique aqui](https://kleberandrade.medium.com/
 
 ## Desafio para aula
 
-*   [ ] Adicionar um [ícone](https://pub.dev/packages/flutter_launcher_icons) e uma [tela de splash](https://pub.dev/packages/custom_splash) para o aplicativo;
-*   [ ] Na MovieDetailPage adicionar pelo menos 2 novas informaçoes;
-*   [ ] Criar um [IconButton na AppBar](https://medium.com/flutterpub/playing-with-appbar-in-flutter-3a8abd9b982a) que altere o crossAxisCount do GridView entre 2 e 3. Nao se esqueçam do setState;
+*   [x] Adicionar um [ícone](https://pub.dev/packages/flutter_launcher_icons) e uma [tela de splash](https://pub.dev/packages/custom_splash) para o aplicativo;
+*   [x] Na MovieDetailPage adicionar pelo menos 2 novas informaçoes;
+*   [x] Criar um [IconButton na AppBar](https://medium.com/flutterpub/playing-with-appbar-in-flutter-3a8abd9b982a) que altere o crossAxisCount do GridView entre 2 e 3. Nao se esqueçam do setState;
 *   [ ] Trocar a lógica do ScrollController por [InfiniteScrollPagination](https://pub.dev/packages/infinite_scroll_pagination);
-*   [ ] Utilizar [FancyShimmerImage](https://pub.dev/packages/fancy_shimmer_image) para os posters (MoviePage) e banners (MovieDetailPage);
+*   [x] Utilizar [FancyShimmerImage](https://pub.dev/packages/fancy_shimmer_image) para os posters (MoviePage) e banners (MovieDetailPage);
 
 ## Licença
 
