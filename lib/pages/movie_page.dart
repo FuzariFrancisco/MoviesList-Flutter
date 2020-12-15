@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 import '../core/constants.dart';
 import 'movie_detail_page.dart';
 import '../widgets/centered_message.dart';
@@ -18,9 +17,6 @@ class _MoviePageState extends State<MoviePage> {
   int lastPage = 1;
   int gridCardsShow = 2;
 
-  final PagingController<int, MoviePage> _pagingController =
-      PagingController(firstPageKey: 0);
-
   @override
   void initState() {
     super.initState();
@@ -29,11 +25,16 @@ class _MoviePageState extends State<MoviePage> {
   }
 
   _initScrollListener() {
-    _pagingController.addPageRequestListener((pageKey) async {
+    _scrollController.addListener(() async {
+      if (_scrollController.offset >=
+          _scrollController.position.maxScrollExtent) {
+        if (_controller.currentPage == lastPage) {
+          lastPage++;
           await _controller.fetchAllMovies(page: lastPage);
           setState(() {});
+        }
       }
-    );
+    });
   }
 
   _initialize() async {
